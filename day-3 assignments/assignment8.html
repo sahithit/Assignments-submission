@@ -1,0 +1,30 @@
+<!--Assignment - 8: Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML-->
+<!DOCTYPE>
+<html>
+<head>
+	<title>assignment-8</title>
+</head>
+<body>
+	<form>
+		<label>Select your fav color</label>
+		<select id="color">
+			<option>pink</option>
+			<option> blue</option>
+			<option> black</option>
+			<option> red</option>
+			<option> white</option>
+			<option>yellow</option>
+		</select>
+	</form>
+	<button onclick="submit()">Submit</button><p id="result"></p><p> is your favourite color.</p>
+	
+	
+	<script>
+		function submit()
+		{
+			var c=document.getElementById('color').value;
+			document.getElementById('result').innerHTML=c;
+		}
+	</script>
+</body>
+</html>
